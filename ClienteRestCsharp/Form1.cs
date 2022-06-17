@@ -104,5 +104,13 @@ namespace ClienteRestCsharp
             string json = JsonConvert.SerializeObject(usuario);
             txtUsuarioJson.Text = json;
         }
+
+        private void btnGeneraJsonCursoFake_Click(object sender, EventArgs e)
+        {
+            string nombreCurso = Faker.Company.Name();
+            Curso curso = new Curso(nombreCurso);
+            string json = JsonConvert.SerializeObject(curso);
+            txtUsuarioJson.Text = json;
+        }
     }
 }

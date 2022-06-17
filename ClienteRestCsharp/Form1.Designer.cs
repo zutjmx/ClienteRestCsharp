@@ -48,6 +48,7 @@ namespace ClienteRestCsharp
             this.btnGeneraDatosFake = new System.Windows.Forms.Button();
             this.btnGenaraUsuarioFakeJson = new System.Windows.Forms.Button();
             this.txtUsuarioJson = new System.Windows.Forms.TextBox();
+            this.btnGeneraJsonCursoFake = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,7 +215,7 @@ namespace ClienteRestCsharp
             // 
             // btnGenaraUsuarioFakeJson
             // 
-            this.btnGenaraUsuarioFakeJson.Location = new System.Drawing.Point(397, 247);
+            this.btnGenaraUsuarioFakeJson.Location = new System.Drawing.Point(397, 235);
             this.btnGenaraUsuarioFakeJson.Name = "btnGenaraUsuarioFakeJson";
             this.btnGenaraUsuarioFakeJson.Size = new System.Drawing.Size(112, 55);
             this.btnGenaraUsuarioFakeJson.TabIndex = 17;
@@ -228,14 +229,25 @@ namespace ClienteRestCsharp
             this.txtUsuarioJson.Multiline = true;
             this.txtUsuarioJson.Name = "txtUsuarioJson";
             this.txtUsuarioJson.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtUsuarioJson.Size = new System.Drawing.Size(112, 195);
+            this.txtUsuarioJson.Size = new System.Drawing.Size(230, 195);
             this.txtUsuarioJson.TabIndex = 18;
+            // 
+            // btnGeneraJsonCursoFake
+            // 
+            this.btnGeneraJsonCursoFake.Location = new System.Drawing.Point(515, 235);
+            this.btnGeneraJsonCursoFake.Name = "btnGeneraJsonCursoFake";
+            this.btnGeneraJsonCursoFake.Size = new System.Drawing.Size(112, 55);
+            this.btnGeneraJsonCursoFake.TabIndex = 19;
+            this.btnGeneraJsonCursoFake.Text = "Genera Json Curso Fake";
+            this.btnGeneraJsonCursoFake.UseVisualStyleBackColor = true;
+            this.btnGeneraJsonCursoFake.Click += new System.EventHandler(this.btnGeneraJsonCursoFake_Click);
             // 
             // ClienteRespCsharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 560);
+            this.Controls.Add(this.btnGeneraJsonCursoFake);
             this.Controls.Add(this.txtUsuarioJson);
             this.Controls.Add(this.btnGenaraUsuarioFakeJson);
             this.Controls.Add(this.panel1);
@@ -277,6 +289,7 @@ namespace ClienteRestCsharp
         private System.Windows.Forms.Button btnGeneraDatosFake;
         private System.Windows.Forms.Button btnGenaraUsuarioFakeJson;
         private System.Windows.Forms.TextBox txtUsuarioJson;
+        private System.Windows.Forms.Button btnGeneraJsonCursoFake;
     }
 }
 
